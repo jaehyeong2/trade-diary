@@ -1,0 +1,27 @@
+server:
+  port: 8040
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5434/trade_local
+    username: trade_local
+    password: trade_local
+
+
+  # jpa
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+security:
+  jwt:
+    token:
+      secret-key: test1test2test3FMETR9bzr4D79QUgeG7zujVfLRxcSrY6KHuhTVY4gZjAbCepNpAxJ46Vec5C4VQfSuH5HfYdX95PNzhYSrjFdbAq4vHDKhe3SEB7kMhgs4uAtest1
+
+  aes-128:
+    key: 1dasdasdas23456789dasdasdas10111213dasdassadadaa

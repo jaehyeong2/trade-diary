@@ -1,0 +1,15 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: trade_local
+      POSTGRES_USER: trade_local
+      POSTGRES_PASSWORD: trade_local
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
